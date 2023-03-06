@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTests" verbose="1">
+    <parameter name="user" value="tomsmith"/>
+    <parameter name="pass" value="SuperSecretPassword!"/>
+    <parameter name="successLogoutMessage" value="You logged out of the secure area!"/>
+    <parameter name="mesajLogin" value="You logged into a secure area!"/>
+
+    <test name="Login">
+        <classes>
+            <class name="com.tests.LogInAndOutTests"/>
+        </classes>
+    </test>
+
+    <test name="Logout">
+        <classes>
+            <class name="com.tests.BlogButtonTests"/>
+        </classes>
+    </test>
+
+    <test name="Checkbox">
+        <classes>
+            <class name="com.tests.HomeButtonTests"/>
+        </classes>
+    </test>
+
+    <test name="Wrong Password">
+        <classes>
+            <class name="com.tests.LogInWrongPasswordTests"/>
+        </classes>
+    </test>
+
+
+</suite>
