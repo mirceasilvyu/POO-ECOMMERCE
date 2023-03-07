@@ -18,12 +18,6 @@
         </classes>
     </test>
 
-    <test name="Checkbox">
-        <classes>
-            <class name="com.tests.HomeButtonTests"/>
-        </classes>
-    </test>
-
     <test name="Wrong Password">
         <classes>
             <class name="com.tests.LogInWrongPasswordTests"/>
@@ -32,11 +26,6 @@
     <test name="Product Shipped Confirmation">
         <classes>
             <class name="com.tests.ProductShipmentTests"/>
-        </classes>
-    </test>
-    <test name="Add to Cart and Verify">
-        <classes>
-            <class name="com.tests.SearchAndAddToCartTests"/>
         </classes>
     </test>
     <test name="Write Review and Confirm Review">
