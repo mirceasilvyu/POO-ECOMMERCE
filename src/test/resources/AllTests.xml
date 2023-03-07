@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="AllTests" verbose="1">
-    <parameter name="user" value="tomsmith"/>
-    <parameter name="pass" value="SuperSecretPassword!"/>
-    <parameter name="successLogoutMessage" value="You logged out of the secure area!"/>
-    <parameter name="mesajLogin" value="You logged into a secure area!"/>
+<!--    <parameter name="user" value="tomsmith"/>-->
+<!--    <parameter name="pass" value="SuperSecretPassword!"/>-->
+<!--    <parameter name="successLogoutMessage" value="You logged out of the secure area!"/>-->
+<!--    <parameter name="mesajLogin" value="You logged into a secure area!"/>-->
 
     <test name="Login">
         <classes>
@@ -29,6 +29,25 @@
             <class name="com.tests.LogInWrongPasswordTests"/>
         </classes>
     </test>
-
+    <test name="Product Shipped Confirmation">
+        <classes>
+            <class name="com.tests.ProductShipmentTests"/>
+        </classes>
+    </test>
+    <test name="Add to Cart and Verify">
+        <classes>
+            <class name="com.tests.SearchAndAddToCartTests"/>
+        </classes>
+    </test>
+    <test name="Write Review and Confirm Review">
+        <classes>
+            <class name="com.tests.WriteReviewTets"/>
+        </classes>
+    </test>
+    <test name="Verify the landing page link when clicking the logo ">
+        <classes>
+            <class name="com.tests.LogoVerificationTest"/>
+        </classes>
+    </test>
 
 </suite>

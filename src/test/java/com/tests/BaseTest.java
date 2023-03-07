@@ -22,8 +22,9 @@ public class BaseTest  {
     @AfterMethod
     protected void tearDown(){
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.close();}
     }
-//      //  driver.manage().deleteAllCookies();
-//        //driver.close();}
 
-}
+
+

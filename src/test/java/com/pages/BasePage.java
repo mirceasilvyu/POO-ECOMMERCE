@@ -12,6 +12,9 @@ public class BasePage {
     final static String WRONG_PASSWORD="123456789";
     final static String PRODUCT_SEARCH="Nikon d300";
     final static String FIFTY_PRODUCTS="5";
+    final static String NAME="Silvyu";
+    final static String MESSAGE ="Doar ce am intrat in posesia telefonului si pot spune ca este super. Am facut precomanda de pe site-ul oficial si a ajuns mai devreme cu o saptamana decat se preconizase.";
+
 
 
     public BasePage(WebDriver driver) {

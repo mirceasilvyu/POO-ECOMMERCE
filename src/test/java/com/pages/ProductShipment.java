@@ -33,10 +33,12 @@ public class ProductShipment extends BasePage {
     private WebElement inputLogInButton;
     @FindBy(xpath = "//*[@id=\'payment-address\']/div[1]/div[1]")
     private WebElement radioButtonSameAdress;
-    @FindBy(css = "#form-checkout > div > div.col-lg-7.mb-5.mb-lg-0 > div > div:nth-child(6) > label > a")
+    @FindBy(css ="//*[text('I have read and agree to the ']")
     private WebElement radioButtonAcceptTerms;
     @FindBy(xpath = "//*[@id=\'button-save\']")
     private  WebElement continuepurchase;
+    @FindBy(xpath = "//*[@id=\'content\']")
+    private WebElement confirmOrderText;
     public void clickFirstProduct(){this.firstproduct.click();}
     public void clickClearProducts(){this.clearproducts.clear();}
     public void insertfiftyproducts(){this.fiftyproducts.sendKeys(FIFTY_PRODUCTS);}
@@ -49,5 +51,7 @@ public class ProductShipment extends BasePage {
     public void clickRadioButtonSameAdress(){this.radioButtonSameAdress.click();}
     public void clickRadioButtonAcceptTerms(){this.radioButtonAcceptTerms.click();}
     public void clickContinuePurchase(){this.continuepurchase.click();}
+
+    public String clickConfirmOrderText(){return confirmOrderText.getText();}
 
 }
